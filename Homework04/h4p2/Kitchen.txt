@@ -1,0 +1,9 @@
+Global: 320, 320, and 318
+  Minimum: 20
+  Maximum: 36
+Ordered: 830, 811, and 777
+  Minimum: 30
+  Maximum: 89
+TakeAll: 2329, 2355, and 2342
+  Minimum: 104
+  Maximum: 360

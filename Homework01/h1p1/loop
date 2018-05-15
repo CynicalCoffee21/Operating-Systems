@@ -1,0 +1,47 @@
+          // FOR LOOP IMPLEMENTATION     
+         
+          for( int i = 0; i <= ptCount - 3; i++){
+            for ( int j = i+1; j <= ptCount - 2; j++){
+              for ( int k = j+1; k <= ptCount - 1; k++){
+                  //distances between the points.
+                    p0 = (double)distSquared( i, j );
+                    p0 = sqrt(p0);
+                    p1 = (double)distSquared( j, k );
+                    p1 = sqrt(p1);
+                    p2 = (double)distSquared( i, k );
+                    p2 = sqrt(p2);
+                    if ( check( p0, p1, p2 ) == true ){
+                       // printf("%d, %d, %d \n", i, j, k);
+                        n++;
+                    }
+              }
+            }
+          } 
+          
+          
+          
+          
+          
+          
+        for( int l = i; l <= ptCount - 3; ){
+            for ( int j = l+1; j <= ptCount - 2; j++){
+              for ( int k = j+1; k <= ptCount - 1; k++){
+                  //distances between the points.
+                    p0 = (double)distSquared( l, j );
+                    p0 = sqrt(p0);
+                    p1 = (double)distSquared( j, k );
+                    p1 = sqrt(p1);
+                    p2 = (double)distSquared( l, k );
+                    p2 = sqrt(p2);
+                    if ( check( p0, p1, p2 ) == true ){
+                        n++;
+                    }
+                    if(k == ptCount -1 && j == ptCount - 2){
+                        if ( l == 0 ){
+                            l = m;
+                        } else 
+                            l = ((l *= m) + i);                      
+                    }
+              }
+            }
+          } 
